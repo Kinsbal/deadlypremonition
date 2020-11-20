@@ -1,0 +1,57 @@
+Deadly Premonition ideas on top of your mod.
+
+1. Vehicle overhaul:
+
+//Low power car fix:
+-Problem: Car acceleration is very slow and bad on low power cars, which is especially unrealistic for police vehicles
+-Solutiion: Double the acceleration for all low power cars and multiple acceleration by 1.5 on medium power cars.
+
+//Steering
+-Problem: No treshold to steering left or right, thus it is very clunky (a short left or right steer have too much of an impact); I bet the math behind it is a simple +=n function on every button down event;
+-Solution: Add treshold to steering by copying either the acceleration's or the camera tilt's math;
+
+//Camera tilt when steering
+-Default: Steering the car left or right, the camera tilts to the wrong direction making it hard to see where you are driving
+-Overhaul: The camera tilts to the opposite direction (revealing more of the scenery)
+
+2. Combat overhaul:
+-Problem #1: Enemy death animation is messy. Enemies upon death only shift down into the ground with a low res mist trying to mask the shifting.
+-Solution for #1: Replace the purple mist with a bigger and higher resolution mist effect to completely hide the shifting itself;
+
+-Problem #2: Enemy death animation is quite buggy. I guess when they shift down to the ground, the enemy texture is only unloaded when the mist animation is completely over. There are often cases where you hit an invisible enemy wall and cannot cross their corpse. Especially annoying when you are in narrow corridors.
+-Solution for #2: Unload the enemy texture sooner, when the mist effect is triggered.
+
+-Debatable #1: I would make the game a bit more challenging, so using the large variety of guns the game throws at us could be more exciting.
+-Solution for debatable #1: Double the speed of enemies by 1.5 & I would double/tripple the damage of enemy hits
+
+3. In city view distance:
+-Problem: the view distance is bad, so texture popin is very noticable (even with DOF on). Also textures would glitch in the background very often.
+-Solution: Let's increase the view distance; alternatively a Silent Hill 2 esque fog could be added to the game, which could also help to build immersion.
+
+4. Depth of field & Your shader solution:
+-I noticed a bug with your shader solution: whenever steam overlay is on and I receive a popup, the game's shader & color solution would change (blacker colors, etc). I disabled steam overlay and could enjoy the game, but then I did not get any achievements (ofc not a deal breaker for me).
+-Remarks: I disabled DOF completely, while a shimmering effect thanks to the combination of DOF, lowtex, texpopins was ruining my eyes. I noticed I was not squinting anymore and could enjoy the game even more. Maybe my 'fog' solution under view distance could help in this regard.
+
+5. Sound effect overhaul:
+
+//Gun sound effects:
+-Problem: Gun sound effects are very low in volume & the shotgun sound effect bugs out very often
+-Solution: Double the volume of all guns by 2 and replace the shotgun sound effect completely;
+
+//Vehicle sound effects:
+-Problem: Vehicle sounds are very lackluster and low in volume
+-Suspected: Maybe the choice was made to reduce the noise for the dialogues to be in front
+-Solution: Replace the stock engine noises & double the volume of the player's car when there is no dialogue running in front
+
+6. Hud, Menu, UI:
+I saw in 'the thread that you were looking into fixing the map size - could not agree more, the map is too big. However the map in the menu is too zoomed in. Maybe the menu map could be zoomed out even more - if all ingame flashy ui is removed, the player has to use and trust the menu map even more.
+Also, I would disable eating and sleeping in game bars completely - the menu TV is there for this purpose.
+The giant green in game markers are then the only annoyances left in the game. I would replace these with white flat zigzagged circles. Anything but those green stuff.
+
+7. Usual suspects:
+Texture resolution to be upscaled on all textures. I used "HD Environment and Skins Texture pack by Drogean", but I believe they couuld be upscaled by the pc even more.
+Creepy terminator smile is the best, let's not touch that.
+
+Let me know what you think!
+
+Have a great day until!
